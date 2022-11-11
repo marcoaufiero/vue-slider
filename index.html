@@ -18,13 +18,10 @@
         
         <div class="box">
             <div class="img-box">
-                <img v-bind:src="image[index].imgPath" alt="">
+                <img :src="image[index].imgPath" alt="">
             </div>
             <div class="dot-box">
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
+                <i v-for="(dot,x) in 4" class="fa-solid fa-circle" :class="{active: index == x}" @click="prova(x)"></i>
             </div>
         </div>
         

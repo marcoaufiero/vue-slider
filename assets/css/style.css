@@ -21,7 +21,7 @@ img{
 }
 
 .container{
-    height: 500px;
+    height: 600px;
     width: 50%;
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,7 @@ img{
 
 .arrow-box{
     background-color: rgba(255, 255, 255, 0.5);
-    height: 200px;
+    height: 250px;
     width: 50px;
     display: flex;
     justify-content: center;
@@ -54,7 +54,7 @@ img{
 }
 
 .img-box{
-    height: 450px;
+    height: 500px;
 }
 
 .dot-box{
@@ -77,4 +77,8 @@ img{
 .arrow-box:hover{
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.7);
+}
+
+.active{
+    color: #B4E900;
 }

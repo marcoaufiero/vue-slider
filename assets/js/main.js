@@ -2,6 +2,7 @@ var app = new Vue({
     el: '#root',
     data: {
         index: 0,
+        timer: null,
         image: [
             {
                 id: 1,
@@ -21,19 +22,23 @@ var app = new Vue({
             }
         ]
     },
+    
     methods:{
-        arrowRight: function(){
+        
+        arrowRight(){
             this.index++;
             if(this.index >= this.image.length){
                 this.index = 0;
             }
         },
-        arrowLeft: function(){
+        arrowLeft(){
             this.index--;
             if(this.index < 0){
                 this.index = 3;
             }
+        },
+        prova(x){
+            this.index = x;
         }
-
     }
 })
