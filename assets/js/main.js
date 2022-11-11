@@ -2,7 +2,7 @@ var app = new Vue({
     el: '#root',
     data: {
         index: 0,
-        timer: null,
+        clear: 0,
         image: [
             {
                 id: 1,
@@ -22,6 +22,9 @@ var app = new Vue({
             }
         ]
     },
+    mounted(){
+        this.startInterval();
+    },
     
     methods:{
         
@@ -37,8 +40,14 @@ var app = new Vue({
                 this.index = 3;
             }
         },
-        prova(x){
+        active(x){
             this.index = x;
+        },
+        stopInterval(){
+            clearInterval(this.clear)
+        },
+        startInterval(){
+            this.clear = setInterval(this.arrowRight, 1000)
         }
     }
 })

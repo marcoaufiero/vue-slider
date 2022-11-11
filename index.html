@@ -10,8 +10,8 @@
 </head>
 <body>
 
-    <div id="root" class="container">
-        
+    <div id="root" class="container" @mouseenter="stopInterval" @mouseleave="startInterval">
+            
         <div class="arrow-box" @click="arrowLeft">
             <i class="fa-solid fa-chevron-left" ></i>
         </div>
@@ -21,7 +21,7 @@
                 <img :src="image[index].imgPath" alt="">
             </div>
             <div class="dot-box">
-                <i v-for="(dot,x) in 4" class="fa-solid fa-circle" :class="{active: index == x}" @click="prova(x)"></i>
+                <i v-for="(dot,x) in 4" class="fa-solid fa-circle" :class="{active: index == x}" @click="active(x)"></i>
             </div>
         </div>
         
@@ -29,6 +29,7 @@
         <div class="arrow-box" @click="arrowRight">
             <i class="fa-solid fa-chevron-right" ></i>
         </div>
+        
     </div>
     
 
