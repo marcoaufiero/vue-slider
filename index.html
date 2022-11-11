@@ -12,13 +12,13 @@
 
     <div id="root" class="container">
         
-        <div class="arrow-box">
-            <i class="fa-solid fa-chevron-left"></i>
+        <div class="arrow-box" @click="arrowLeft">
+            <i class="fa-solid fa-chevron-left" ></i>
         </div>
         
         <div class="box">
             <div class="img-box">
-
+                <img v-bind:src="image[index].imgPath" alt="">
             </div>
             <div class="dot-box">
                 <i class="fa-solid fa-circle"></i>
@@ -29,8 +29,8 @@
         </div>
         
         
-        <div class="arrow-box">
-            <i class="fa-solid fa-chevron-right"></i>
+        <div class="arrow-box" @click="arrowRight">
+            <i class="fa-solid fa-chevron-right" ></i>
         </div>
     </div>
     
