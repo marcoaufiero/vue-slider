@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #192123;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    height: 500px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow-box{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 200px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.fa-chevron-left{
+    font-size: 2.5rem;
+}
+
+.fa-chevron-right{
+    font-size: 2.5rem;
+}
+
+.img-box{
+    background-color: white;
+    width: 80%;
+    height: 400px;
+}
