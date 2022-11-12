@@ -22,14 +22,15 @@ img{
 
 .container{
     height: 600px;
-    width: 50%;
+    width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .arrow-box{
-    background-color: rgba(255, 255, 255, 0.5);
+    background: rgb(208,208,208);
+    background: linear-gradient(90deg, rgba(208,208,208,1) 0%, rgba(171,169,169,1) 50%, rgba(96,96,96,1) 100%);
     height: 250px;
     width: 50px;
     display: flex;
@@ -55,6 +56,9 @@ img{
 
 .img-box{
     height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px black ;
 }
 
 .dot-box{
@@ -70,13 +74,23 @@ img{
 }
 
 .fa-circle:hover{
-    color: lightgrey;
+    opacity: 0.8;
     cursor: pointer;
 }
 
 .arrow-box:hover{
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.7);
+    background: rgb(208,208,208);
+    background: linear-gradient(90deg, rgba(208,208,208,0.8) 0%, rgba(171,169,169,0.8) 50%, rgba(96,96,96,0.8) 100%);
+    box-shadow: 5px 5px 10px black ;
+}
+
+.arrow-box:hover .fa-chevron-right{
+    color: white;
+}
+
+.arrow-box:hover .fa-chevron-left{
+    color: white;
 }
 
 .active{

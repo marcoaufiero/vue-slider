@@ -47,7 +47,7 @@ var app = new Vue({
             clearInterval(this.clear)
         },
         startInterval(){
-            this.clear = setInterval(this.arrowRight, 1000)
+            this.clear = setInterval(this.arrowRight, 3000)
         }
     }
 })
